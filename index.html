@@ -1,0 +1,50 @@
+<FireBoxRoom>
+ <Assets>
+  <AssetScript src="scripts/videoscreen.js"/>
+  <AssetVideo auto_play="true" id="main4kvid" loop="true" src="https://www.youtube.com/watch?v=cSp1dM2Vj48" />
+  <AssetVideo auto_play="true" id="main4kvid1" loop="true" sbs3d="true" src="https://www.youtube.com/watch?v=5tXno7ebwfI&t=164s" />
+  <AssetImage id="sky_front" src="img/front.jpg" tex_clamp="true"/>
+  <AssetImage id="particles" src="img/yellowparticle.png"/>
+  <AssetImage id="sky_up" src="img/up.png"/>
+  <AssetImage id="sky_side" src="img/side.png"/>
+  <AssetImage id="sky_down" src="img/down.png"/>
+  <AssetImage id="rmap" src="img/rmap.dds" tex_clamp="true"/>
+  <AssetImage id="rain_img" src="https://paradox.spyduck.net/rooms/landscapes/rain.png"/>
+  <AssetImage id="irmap" src="img/irmap.dds" tex_clamp="true"/>
+  <AssetImage id="sky_img" src="img/envmap.jpg"/>
+  <AssetImage id="fire" src="img/fire_particle.png"/>
+  <AssetObject id="naturepack_077" src="obj/naturepack_077.obj" mtl="obj/naturepack_077.mtl" />
+  <AssetObject id="naturepack_078" src="obj/naturepack_078.obj" mtl="obj/naturepack_078.mtl" />
+  <AssetObject id="10_d" mtl="obj/10_d.mtl" src="obj/10_d.obj.gz"/>
+  <AssetObject id="pumpkins" mtl="obj/pumpkins.mtl" src="obj/pumpkins.obj.gz"/>
+  <AssetObject id="tiny_weed_01" mtl="obj/tiny_weed_01.mtl" src="obj/tiny_weed_01.obj.gz"/>
+  <AssetObject id="tiny_weeds_03_02" mtl="obj/tiny_weeds_03_02.mtl" src="obj/tiny_weeds_03_02.obj.gz"/>
+  <AssetObject id="trees" mtl="obj/trees.mtl" src="obj/trees.obj.gz"/>
+  <AssetObject id="mountains" mtl="obj/Mountain.mtl" src="obj/Mountains.obj.gz" tex_linear="false"/>
+  <AssetObject id="couch" mtl="obj/couch.mtl" src="obj/couch.obj.gz"/>
+  <AssetObject id="picframe" mtl="obj/picframe.mtl" src="obj/picframe.obj.gz"/>
+  <AssetObject id="logcabin" mtl="obj/logcabin.mtl" src="obj/logcabin.obj.gz"/>
+  <AssetScript src="scripts/sky_center.js"/>
+  <AssetScript src="scripts/halloween-forest-fog.js"/>
+ </Assets>
+ <Room ambient="0 0 0" cursor_visible="false" fog="false" fog_col="#ff0c0b" fog_density="0.02" fog_mode="exp2" pbr="true" pos="-10 0 -35.5" skybox_back_id="sky_side" skybox_down_id="sky_down" skybox_front_id="sky_side" skybox_left_id="sky_side" skybox_right_id="sky_side" skybox_up_id="sky_up" toon="true" use_local_asset="room_plane" visible="false">
+  <Object collision_id="mountains" id="mountains" lighting="true" locked="true" xdir="-1 0 0" zdir="0 0 -1"/>
+  <videoscreen col="1 1 1" cull_face="none" id="plane" js_id="mainvideo" lighting="false" pos="-10.8 3.3 -18.27" scale="4.4 3 1" video_id="main4kvid" xdir="-0.866026 0 -0.5" zdir="0.5 0 -0.866026"/>
+  <Light col="#ff1122" light_cone_angle="0" light_cone_exponent="5" light_intensity="15" light_range="6" pos="0 0.3 0.5"/>
+  <Object collision_pos="0.921675 0.1325 -0.878505" collision_scale="1.84335 0.265 1.75701" id="naturePack_077" js_id="Rainy_Okay_Duck-0-1508629898" pos="-6.8 0 -22.4" xdir="0.788904 0 -0.614517" zdir="0.614517 0 0.788904"/>
+  <Object collision_id="cone" pos="-6.6 0 -23.5" scale="3 6 3"/>
+  <Light col="#ff0037" light_cone_angle="0" light_cone_exponent="5" light_intensity="13" light_range="8" pos="-6.65 0 -23.519995"/>
+  <Object col="0.5 0.5 0.5" collision_pos="0.349665 0.0885 -0.349665" collision_scale="0.699329 0.15 0.699329" id="naturePack_078" js_id="Rainy_Okay_Duck-2-1508630008" pos="-6.55 0 -23.15" xdir="0.675582 0 -0.737285" zdir="0.737285 0 0.675582"/>
+  <Particle col="#ff0037" count="7" image_id="fire" lighting="false" loop="true" pos="-6.65 0 -23.519995" rand_vel="0.5 0 0.5" rate="7" vel="-0.25 1 -0.25"/>
+  <Object id="picframe" js_id="u-14-1538093636" pos="-10.9 3.3 -18" scale="19 7 20" xdir="-0.866026 0 -0.5" ydir="0 -1 0" zdir="-0.5 0 0.866026"/>
+  <Object id="logcabin" js_id="u-19-1538093930" pos="8.1 4.1 -27" scale="9 9 9" xdir="-1 0 0" zdir="0 0 -1"/>
+  <Object id="couch" js_id="u-17-1538093832" pos="-7 0.3 -27.3" scale="2 2 2" xdir="-1 0 0" zdir="0 0 -1"/>
+  <Object id="couch" js_id="u-17-1538093833" pos="-2.8 0.3 -25.6" scale="2 2 2" xdir="-0.7 0 -0.7" zdir="0.71 0 -0.71"/>
+  <Object id="10_d" pos="0 0 0"/>
+  <Object id="pumpkins" pos="0 0 0"/>
+  <Object id="tiny_weed_01" pos="0 0 0"/>
+  <Object id="tiny_weeds_03_2" pos="0 0 0"/>
+  <Object id="trees" pos="0 0 0"/>
+  <Object collision_id="cube" id="cube" js_id="koolguy1337-2-1520959750" pos="0 -0.5 3.5" scale="100000 0.1 100000" visible="false" xdir="-1 0 0.000002" zdir="-0.000002 0 -1"/>
+ </Room>
+</FireBoxRoom>
